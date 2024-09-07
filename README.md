@@ -11,19 +11,11 @@
 
 ## Installation
 
-You can install `search_plot_utils` via pip (after setting up your project on PyPI) or by cloning the repository and installing manually:
+You can install [search_plot_utils](https://pypi.org/project/grid-search-utils/) via pip
 
-\`\`\`bash
+```bash
 pip install search_plot_utils
-\`\`\`
-
-Or to install manually:
-
-\`\`\`bash
-git clone https://github.com/yourusername/search_plot_utils.git
-cd search_plot_utils
-pip install .
-\`\`\`
+```
 
 ## Usage
 
@@ -31,33 +23,39 @@ pip install .
 
 You can use `plot_search_results` to create plots from your search results. This function is flexible and works with `GridSearchCV`, `RandomizedSearchCV`, and similar search objects.
 
-\`\`\`python
-from search_plot_utils import plot_search_results
+```python
+from grid_search_utils.plotting import plot_grid_search, plot_grid_search_non_interactive
+
+
 from sklearn.model_selection import GridSearchCV
 from sklearn.datasets import load_iris
 from sklearn.ensemble import RandomForestClassifier
 
 # Example usage with GridSearchCV
 iris = load_iris()
+
 clf = RandomForestClassifier()
 param_grid = {'n_estimators': [10, 50], 'max_depth': [2, 4]}
 grid_search = GridSearchCV(clf, param_grid)
 grid_search.fit(iris.data, iris.target)
 
-# Plot the search results
+# Plot the search results (Interactive version)
 plot_search_results(grid_search.cv_results_)
-\`\`\`
+
+# Plot the search results (Non Interactive version)
+plot_grid_search_non_interactive(grid_search.cv_results_)
+```
 
 ### 2. Creating Tables from Search Results
 
 `table_search_results` helps you create and display tables from search results, making it easy to inspect and compare different hyperparameter settings.
 
-\`\`\`python
-from search_plot_utils import table_search_results
+```python
+from grid_search_utils.tables import table_grid_search
 
 # Display the search results in a table
 table_search_results(grid_search.cv_results_)
-\`\`\`
+```
 
 ## Contributing
 

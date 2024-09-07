@@ -5,6 +5,7 @@ import plotly.graph_objs as go
 import matplotlib.pyplot as plt
 from scipy import stats
 import plotly.io as pio
+import pprint
 
 def plot_grid_search(clf, save=False, filename=None):
     """Plot grid search results using Plotly."""
