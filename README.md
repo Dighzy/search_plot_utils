@@ -24,8 +24,7 @@ pip install search_plot_utils
 You can use `plot_search_results` to create plots from your search results. This function is flexible and works with `GridSearchCV`, `RandomizedSearchCV`, and similar search objects.
 
 ```python
-from grid_search_utils.plotting import plot_grid_search, plot_grid_search_non_interactive
-
+from search_plot_utils.plotting import plot_grid_search, plot_grid_search_non_interactive
 
 from sklearn.model_selection import GridSearchCV
 from sklearn.datasets import load_iris
@@ -51,7 +50,7 @@ plot_grid_search_non_interactive(grid_search.cv_results_)
 `table_search_results` helps you create and display tables from search results, making it easy to inspect and compare different hyperparameter settings.
 
 ```python
-from grid_search_utils.tables import table_grid_search
+from search_plot_utils.tables import table_grid_search
 
 # Display the search results in a table
 table_search_results(grid_search.cv_results_)

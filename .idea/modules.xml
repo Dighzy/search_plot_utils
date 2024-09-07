@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/grid_search_utils.iml" filepath="$PROJECT_DIR$/.idea/grid_search_utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/search_plot_utils.iml" filepath="$PROJECT_DIR$/.idea/search_plot_utils.iml" />
     </modules>
   </component>
 </project>

@@ -1,5 +1,5 @@
 import unittest
-from grid_search_utils.tables import table_grid_search
+from search_plot_utils.tables import table_grid_search
 from sklearn.model_selection import GridSearchCV
 from sklearn.datasets import load_iris
 from sklearn.ensemble import RandomForestClassifier

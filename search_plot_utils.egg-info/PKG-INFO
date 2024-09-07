@@ -1,19 +1,24 @@
+Metadata-Version: 2.1
+Name: search-plot-utils
+Version: 0.1
+Summary: Simplifies the visualization and analysis of search results from hyperparameter optimization.
+Home-page: https://github.com/yourusername/search_plot_utils
+Author: Diogo Hajjar
+Author-email: diogohajjar@gmail.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
 
-from setuptools import setup, find_packages
-
-setup(
-    name='search_plot_utils',
-    version='0.1',
-    packages=find_packages(),
-    install_requires=[
-        'matplotlib',
-        'pandas',
-        'scikit-learn',
-    ],
-    author='Diogo Hajjar',
-    author_email='diogohajjar@gmail.com',
-    description='Simplifies the visualization and analysis of search results from hyperparameter optimization.',
-    long_description=""" 
+ 
     # search_plot_utils
     
     `search_plot_utils` is a Python library designed to simplify the visualization and analysis of search results from various hyperparameter optimization methods, including `GridSearchCV`, `RandomizedSearchCV`, and more. This library provides flexible and easy-to-use functions to create insightful plots and tables, enabling better interpretation and comparison of model performance across different hyperparameter combinations.
@@ -44,8 +49,8 @@ setup(
     ## Example Usage:
     
     ```python
-    from search_plot_utils.plotting import plot_grid_search, plot_grid_search_non_interactive
-    from search_plot_utils.tables import table_grid_search
+    from grid_search_utils.plotting import plot_grid_search, plot_grid_search_non_interactive
+    from grid_search_utils.tables import table_grid_search
     
     from sklearn.model_selection import GridSearchCV
     from sklearn.datasets import load_iris
@@ -74,19 +79,4 @@ setup(
     ## License:
     
     This project is licensed under the MIT License.
-    """,
-    long_description_content_type='text/markdown',
-    url='https://github.com/yourusername/search_plot_utils',
-    license='MIT',
-    classifiers=[
-        'Development Status :: 3 - Alpha',
-        'Intended Audience :: Developers',
-        'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8',
-        'Programming Language :: Python :: 3.9',
-    ],
-    python_requires='>=3.6',
-)
+    
